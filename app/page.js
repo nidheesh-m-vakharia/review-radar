@@ -1,5 +1,5 @@
-import Image from "next/image";
+import Underconstruction from "./Underconstruction.js";
 
 export default function Home() {
-  return <h1>Under Construction</h1>;
+  return <Underconstruction/>;
 }
