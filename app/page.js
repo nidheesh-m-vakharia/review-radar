@@ -1,5 +1,5 @@
-import Underconstruction from "./Underconstruction.js";
+import Underconstruction from "./Underconstruction";
 
 export default function Home() {
-  return <Underconstruction/>;
+  return <Underconstruction />;
 }
