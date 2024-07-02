@@ -5,7 +5,6 @@
  */
 const nextConfig = {
   /* config options here */
-  assetPrefix: undefined,
 }
 
 export default nextConfig
