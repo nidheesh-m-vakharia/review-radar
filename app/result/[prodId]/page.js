@@ -1,4 +1,6 @@
-'use client';
+export function generateStaticParams() {
+  return [{ prodId: '1' }, { prodId: '2' }, { prodId: '3' }]
+}
 export default function Page({params}) {
   return (
     <div>
