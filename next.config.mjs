@@ -4,7 +4,8 @@
  * @type {import('next').NextConfig}
  */
 const nextConfig = {
-  export: 'stanalone'
-}
+  /* config options here */
+  assetPrefix: undefined,
+};
 
 export default nextConfig
