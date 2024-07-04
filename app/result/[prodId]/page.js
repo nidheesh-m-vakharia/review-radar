@@ -1,3 +1,4 @@
+
 "use client";
 import { getProductName } from "./actions.js";
 import { useState, useEffect } from "react";

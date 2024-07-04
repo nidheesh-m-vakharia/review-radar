@@ -1,3 +1,4 @@
+
 "use client";
 import { postToResult } from "./actions.js";
 
@@ -25,6 +26,5 @@ export default function Page() {
           </button>
         </form>
       </div>
-    </>
   );
 }
