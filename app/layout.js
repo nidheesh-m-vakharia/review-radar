@@ -1,7 +1,7 @@
-import { Inter } from "next/font/google";
+import { Space_Mono } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Space_Mono({ subsets: ["latin"], weight: ["400", "700"] });
 
 export const metadata = {
   title: "Review Radar",
