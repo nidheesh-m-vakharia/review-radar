@@ -27,3 +27,44 @@ export async function getProductName(prodId) {
         .textContent;
     });
 }
+
+export async function getProductVideo(prodId) {
+  return await getProductName(prodId)
+    // Search for the product name on youtube
+    .then((res) => {
+      const url = new URL(
+        `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=25&key=api+key`,
+      );
+      url.searchParams.append("q", res);
+      url.searchParams.set("key", process.env.YT_API_KEY);
+      url.searchParams.set("type", "video");
+      url.searchParams.set("order", "relevance");
+      console.log(url);
+      return url.toString();
+    })
+
+    // Fetch the search results
+    .then(async (req) => {
+      const res = await fetch(req);
+      return res.json();
+    })
+
+    // Get the video array
+    .then((res) => {
+      return res.items;
+    })
+
+    .then((res) => {
+      return res.map((item) => {
+        return {
+          title: item.snippet.title,
+          channelTitle: item.snippet.channelTitle,
+          channelId: item.snippet.channelId,
+          videoId: item.id.videoId,
+          thumbnail: item.snippet.thumbnails.high.url,
+          height: item.snippet.thumbnails.high.height,
+          width: item.snippet.thumbnails.high.width,
+        };
+      });
+    });
+}
