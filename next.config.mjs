@@ -5,7 +5,7 @@
  */
 const nextConfig = {
   images: {
-    domains: ["media1.tenor.com"],
+    domains: ["media1.tenor.com", "i.ytimg.com", "via.placeholder.com"],
   },
   assetPrefix: undefined,
 };
