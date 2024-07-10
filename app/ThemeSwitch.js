@@ -28,4 +28,11 @@ export default function ThemeSwitch() {
       />
     );
   }
+  return (
+    <MdDarkMode
+      size={28}
+      className="text-text-950"
+      onClick={() => setTheme("dark")}
+    />
+  );
 }
