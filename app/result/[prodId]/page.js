@@ -19,21 +19,18 @@ export default function Page({ params }) {
 
   return (
     <div className="  flex flex-col    justify-center items-center min-h-[100vh]">
-      <div className="text-text-950 text-center w-[18em] p-10 rounded-xl">
-        <h1 className="text-3xl font-black text-primary  mb-10">Result</h1>
-        <p className="mb-4">
-          Product ID:
-          <br /> {params.prodId}
-        </p>
-        <p>
-          Name:
-          <br />
-          {productName}
-        </p>
-        <p>
-          Video:
-          <br />
-        </p>
+      <div className=" flex flex-col text-text-950 text-center  mt-36 rounded-xl border-background-400 border-solid border-2 lg:w-2/3 w-3/4 mb-10 items-center justify-center">
+
+        <h1 className="lg:text-3xl  w-fit text-2xl font-black text-primary  mb-10">
+          Result
+        </h1>
+        <h2 className="md:text-2xl text-xl text-text-800 mb-10 w-2/3">
+          {productName ? (
+            productName
+          ) : (
+            <div className="animate-pulse">Loading...</div>
+          )}
+        </h2>
       </div>
       <div class="flex flex-row w-[100vw] justify-center flex-wrap">
         {!productVideo
