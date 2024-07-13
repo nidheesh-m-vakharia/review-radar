@@ -62,8 +62,6 @@
     --accent-800: #0b365b;
     --accent-900: #061b2d;
     --accent-950: #030d17;
-    transition: 1s 0.1s ease-in-out;
-    transition: background-color 0.5s;
   }
   .dark {
     --text-50: #170315;
@@ -125,7 +123,5 @@
     --accent-800: #a4cff4;
     --accent-900: #d2e7f9;
     --accent-950: #e8f3fc;
-    transition: 1s 0.1s ease-in-out;
-    transition: background-color 0.5s;
   }
 }

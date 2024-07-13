@@ -8,6 +8,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        "noise-pattern": "url('/public/noise.svg')",
+      },
       colors: {
         text: {
           50: "var(--text-50)",
