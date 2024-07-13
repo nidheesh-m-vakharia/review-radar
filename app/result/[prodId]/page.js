@@ -20,7 +20,6 @@ export default function Page({ params }) {
   return (
     <div className="  flex flex-col    justify-center items-center min-h-[100vh]">
       <div className=" flex flex-col text-text-950 text-center  mt-36 rounded-xl border-background-400 border-solid border-2 lg:w-2/3 w-3/4 mb-10 items-center justify-center">
-
         <h1 className="lg:text-3xl  w-fit text-2xl font-black text-primary  mb-10">
           Result
         </h1>

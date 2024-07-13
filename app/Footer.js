@@ -16,7 +16,10 @@ export default function Footer() {
             </a>
           </li>
           <li>
-            <a href="https://github.com/nidheesh-m-vakharia/review-radar/blob/main/LICENSE" class="hover:underline me-4 md:me-6">
+            <a
+              href="https://github.com/nidheesh-m-vakharia/review-radar/blob/main/LICENSE"
+              class="hover:underline me-4 md:me-6"
+            >
               Licensing
             </a>
           </li>
