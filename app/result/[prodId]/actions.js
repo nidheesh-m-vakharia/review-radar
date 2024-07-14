@@ -39,7 +39,6 @@ export async function getProductVideo(prodId) {
       url.searchParams.set("key", process.env.YT_API_KEY);
       url.searchParams.set("type", "video");
       url.searchParams.set("order", "relevance");
-      console.log(url);
       return url.toString();
     })
 
